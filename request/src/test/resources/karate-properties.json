@@ -1,0 +1,12 @@
+{
+  "dev": {
+    "url": "https://reqres.in/api/",
+    "name": "morpheus",
+    "job": "leader",
+    "email": "janet.weaver@reqres.in",
+    "id": "id",
+    "firstname": "Janet",
+    "lastname": "Weaver",
+   "avatar" : "https://reqres.in/img/faces/2-image.jpg"
+  }
+}
