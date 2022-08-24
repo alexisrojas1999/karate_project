@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>karate.request.create</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">3</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2022-08-22 10:08:38 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:9]">[1:9] check the service POST method </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2.1:33]">[2.1:33] Validate the id using unsupported data types. </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2.2:34]">[2.2:34] Validate the id using unsupported data types. </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">karate/request/create.feature</span><span class="feature-description">Service client POST | AS QA Automation&#13;
+  I want to create a client&#13;
+  To validate the status code and response</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:9]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">check the service POST method </span>
+</div>
+<div class="scenario-time passed">ms: 1148</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:9]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">* def requestCreate = {"name": "#(name)", "job": "#(job)", "id": "#(id)"}</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">* def responsePost = read('classpath:karate/request/responsePost.json')</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">Given path 'users'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">And request requestCreate</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">1121</div>
+</div>
+<div class="preformatted" data-parent="6">22:08:37.018 request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 41
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+{"name":"morpheus","job":"leader","id":2}
+
+22:08:37.709 response time in milliseconds: 689.34
+1 &lt; 201
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 73f0fcf25d8709f2-MIA
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 80
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 23 Aug 2022 04:08:37 GMT
+1 &lt; Etag: W/"50-uRSvi0ASmRuaYiTz81DksZxZeWM"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7bTep%2FO7l99VoZA3Uu7bRK%2BGT6k3DZDsu2OlElk2mGFTLhOwRYY%2FUqyMeFUkyywBCOPlfaY7hEkhF%2B3nPX8h85f1EbMy295vd5%2BVEAVGQo5CXgCp8BGxm%2BTHfQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"name":"morpheus","job":"leader","id":2,"createdAt":"2022-08-23T04:08:37.678Z"}</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">And assert response.name == "morpheus"</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">And assert response.job == "leader"</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">And assert response.id == id</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2.1:33]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [2.1:33]</span><span class="scenario-name">Validate the id using unsupported data types. </span>
+</div>
+<div class="scenario-time passed">ms: 655</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2.1:33]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2.1:33]bg">
+<div class="step-container" id="11">
+<div class="step-ref bg-step">11</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">Given path 'users'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">And request 12345.123</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">653</div>
+</div>
+<div class="preformatted" data-parent="14">22:08:37.742 request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 9
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+12345.123
+
+22:08:38.394 response time in milliseconds: 651.22
+1 &lt; 201
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 73f0fcf67a6767c6-MIA
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 23 Aug 2022 04:08:38 GMT
+1 &lt; Etag: W/"33-WsC6yp571411LB0VPXu23t3U4SY"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=1me3zDEhaTuLOy3VWazH9Zln1Mhk3VYkMFFkml8EE5jFx1WEokUGLHpg96TZ9Xe8Kvta9wvBWGh9u55T2o6KjWjCg2ZyrOS5TMaQaE8%2FAVA6c4mD88v4MUXD0A%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"id":"443","createdAt":"2022-08-23T04:08:38.350Z"}</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2.2:34]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [2.2:34]</span><span class="scenario-name">Validate the id using unsupported data types. </span>
+</div>
+<div class="scenario-time passed">ms: 515</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2.2:34]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2.2:34]bg">
+<div class="step-container" id="16">
+<div class="step-ref bg-step">16</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">Given path 'users'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">And request "@##$"</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">513</div>
+</div>
+<div class="preformatted" data-parent="19">22:08:38.405 request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 4
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+@##$
+
+22:08:38.916 response time in milliseconds: 510.27
+1 &lt; 201
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 73f0fcf9dc956daa-MIA
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 51
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 23 Aug 2022 04:08:38 GMT
+1 &lt; Etag: W/"33-OH3gW+/iWlmfZ3f02FtCIfmRwHY"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=bSmzPt9Lp24XuSIchsbhuRl8Fu0cJkEOj5WMHy9oZU0QwerMgm2FYLY8md3%2B8KHpHzhuTm2wlpgNalEEY%2FcuURH%2FDQ2XjUCTD0UBl3Ekur4KJkTnQpA2wOzUzw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"id":"555","createdAt":"2022-08-23T04:08:38.880Z"}</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

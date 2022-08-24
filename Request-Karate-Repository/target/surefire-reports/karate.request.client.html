@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>karate.request.client</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">7</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2022-08-22 10:11:10 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:9]">[1:9] Check the service get method </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2.1:31]">[2.1:31] Users a not exist in data </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2.2:32]">[2.2:32] Users a not exist in data </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2.3:33]">[2.3:33] Users a not exist in data </a>
+</div>
+<div class="nav-item passed">
+<a href="#[3.1:43]">[3.1:43] Validate the email using unsopported data types </a>
+</div>
+<div class="nav-item passed">
+<a href="#[3.2:44]">[3.2:44] Validate the email using unsopported data types </a>
+</div>
+<div class="nav-item passed">
+<a href="#[3.3:45]">[3.3:45] Validate the email using unsopported data types </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">karate/request/client.feature</span><span class="feature-description">Service client GET | As QA Automation&#13;
+  I want to consult a client&#13;
+  To validate the status code and response</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:9]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">Check the service get method </span>
+</div>
+<div class="scenario-time passed">ms: 975</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:9]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:9]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">* def responsesGet = read('classpath:karate/request/responseGet.json')</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">Given path 'users','2'</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">936</div>
+</div>
+<div class="preformatted" data-parent="4">22:11:06.747 request:
+1 &gt; GET https://reqres.in/api/users/2
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+
+22:11:07.245 response time in milliseconds: 488.70
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 1896
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 73f1009a4e038db5-MIA
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 23 Aug 2022 04:11:07 GMT
+1 &lt; Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=oHJTaPHrnRw9YUXW9nb18bpOBmfoYbFh0nhqxMJRPK69dps0%2B7ztPMiP5IB0w6v8koBpx9tu4Nzou46mG4i6SK7xAfE%2B75rhv5%2FXLSi5Ys%2FC%2FS%2FUCZr1o2habQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">And match response == responsesGet</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">And assert response.support.text == "To keep ReqRes free, contributions towards server costs are appreciated!"</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">And assert response.data.email == email</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">And assert response.data.id == id</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">And assert response.data.first_name == first_name</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">And assert response.data.last_name == last_name</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">And assert response.data.avatar == avatar</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">And assert response.support.url == support</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2.1:31]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [2.1:31]</span><span class="scenario-name">Users a not exist in data </span>
+</div>
+<div class="scenario-time passed">ms: 517</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2.1:31]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2.1:31]bg">
+<div class="step-container" id="14">
+<div class="step-ref bg-step">14</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">Given path 'users',1996</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">514</div>
+</div>
+<div class="preformatted" data-parent="16">22:11:07.290 request:
+1 &gt; GET https://reqres.in/api/users/1996
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+
+22:11:07.802 response time in milliseconds: 511.58
+1 &lt; 404
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: EXPIRED
+1 &lt; CF-RAY: 73f1009c58a709fe-MIA
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 2
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 23 Aug 2022 04:11:07 GMT
+1 &lt; Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=cFjCiusUD9XSTROjeSvo4CzhMoxnhkxIpCRhkrUkY21dC9%2FsylGkY2OSbCW%2BnN5N5QUKRT%2Fu4QXKYfVYNewhY%2Bp6RQXV1pZCPGK5iOyxP6Wi%2FMl8if6A6GkDpg%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{}</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">Then status 404</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2.2:32]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [2.2:32]</span><span class="scenario-name">Users a not exist in data </span>
+</div>
+<div class="scenario-time passed">ms: 466</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2.2:32]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2.2:32]bg">
+<div class="step-container" id="18">
+<div class="step-ref bg-step">18</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">Given path 'users',"@#*/.&amp;"</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">464</div>
+</div>
+<div class="preformatted" data-parent="20">22:11:07.811 request:
+1 &gt; GET https://reqres.in/api/users/@%23*/.&amp;
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+
+22:11:08.274 response time in milliseconds: 461.25
+1 &lt; 404
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: EXPIRED
+1 &lt; CF-RAY: 73f1009f4da021f9-MIA
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 2
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 23 Aug 2022 04:11:08 GMT
+1 &lt; Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=fW7vLjy1rL7j%2FFH99KjdZ4r0Aq6BYgRbbdL73jKSFcZtqeZDqdkS5HPNoRVQrTVpOrqKXvnnC3DOabZVDpdgQRFOM6TZAdSEJInPRp5lRoVfnidvk5raL5s%2FAQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{}</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
+<div class="step-cell passed">Then status 404</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2.3:33]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [2.3:33]</span><span class="scenario-name">Users a not exist in data </span>
+</div>
+<div class="scenario-time passed">ms: 524</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2.3:33]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2.3:33]bg">
+<div class="step-container" id="22">
+<div class="step-ref bg-step">22</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref passed">23</div>
+<div class="step-cell passed">Given path 'users',"Miguel"</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="24">
+<div class="step-ref passed">24</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">521</div>
+</div>
+<div class="preformatted" data-parent="24">22:11:08.294 request:
+1 &gt; GET https://reqres.in/api/users/Miguel
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+
+22:11:08.813 response time in milliseconds: 518.30
+1 &lt; 404
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: EXPIRED
+1 &lt; CF-RAY: 73f100a2bbd68dfa-MIA
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 2
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 23 Aug 2022 04:11:08 GMT
+1 &lt; Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Ho%2BaJ34jpNmUprsUptwc1mBSKMeuj3XNZEOBUM7kG5juTgSvmxd4Mf2Jjz7qAb54osNJ41a3LWv9puASvPkAs1AmtDMcMYU%2Fcm0yVL5Pdy1ca5Z6BXoVrRgY2A%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{}</div>
+<div class="step-row">
+<div class="step-container" id="25">
+<div class="step-ref passed">25</div>
+<div class="step-cell passed">Then status 404</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[3.1:43]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [3.1:43]</span><span class="scenario-name">Validate the email using unsopported data types </span>
+</div>
+<div class="scenario-time passed">ms: 581</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[3.1:43]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[3.1:43]bg">
+<div class="step-container" id="26">
+<div class="step-ref bg-step">26</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="27">
+<div class="step-ref passed">27</div>
+<div class="step-cell passed">Given path 'users',12345</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="28">
+<div class="step-ref passed">28</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">578</div>
+</div>
+<div class="preformatted" data-parent="28">22:11:08.825 request:
+1 &gt; GET https://reqres.in/api/users/12345
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+
+22:11:09.402 response time in milliseconds: 576.72
+1 &lt; 404
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: EXPIRED
+1 &lt; CF-RAY: 73f100a65b902263-MIA
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 2
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 23 Aug 2022 04:11:09 GMT
+1 &lt; Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=GaAQxYfLXsU5dG86GSSGHqwtgksIpJjx%2FKrJd5lwlCaFufIU8LE%2BaQytnR1CxeoxKbPyKGyD9RDw%2BS%2B%2BxRlFJcdnMfxSMnliuinEtUFxo8f5vFqRfsfVkqah3Q%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{}</div>
+<div class="step-row">
+<div class="step-container" id="29">
+<div class="step-ref passed">29</div>
+<div class="step-cell passed">Then status 404</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[3.2:44]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [3.2:44]</span><span class="scenario-name">Validate the email using unsopported data types </span>
+</div>
+<div class="scenario-time passed">ms: 503</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[3.2:44]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[3.2:44]bg">
+<div class="step-container" id="30">
+<div class="step-ref bg-step">30</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="31">
+<div class="step-ref passed">31</div>
+<div class="step-cell passed">Given path 'users',"@##$"</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="32">
+<div class="step-ref passed">32</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">501</div>
+</div>
+<div class="preformatted" data-parent="32">22:11:09.416 request:
+1 &gt; GET https://reqres.in/api/users/@%23%23$
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+
+22:11:09.911 response time in milliseconds: 494.86
+1 &lt; 404
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: MISS
+1 &lt; CF-RAY: 73f100a989428d94-MIA
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 2
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 23 Aug 2022 04:11:09 GMT
+1 &lt; Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=oN92V9VzDO%2BdtrzjUWucoDb%2FS1MQqqaiLZOAkmAeT5dJMsxZQSbrwI%2BuGzhXmTG3tSwOtQRGD%2FkZ9igjMqAox%2Fv7%2BNBj4%2BODAQ4Ss8GlAZVxei0TCN4LAY%2BMiA%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{}</div>
+<div class="step-row">
+<div class="step-container" id="33">
+<div class="step-ref passed">33</div>
+<div class="step-cell passed">Then status 404</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[3.3:45]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [3.3:45]</span><span class="scenario-name">Validate the email using unsopported data types </span>
+</div>
+<div class="scenario-time passed">ms: 656</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[3.3:45]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[3.3:45]bg">
+<div class="step-container" id="34">
+<div class="step-ref bg-step">34</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="35">
+<div class="step-ref passed">35</div>
+<div class="step-cell passed">Given path 'users',"Test123"</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="36">
+<div class="step-ref passed">36</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">652</div>
+</div>
+<div class="preformatted" data-parent="36">22:11:09.931 request:
+1 &gt; GET https://reqres.in/api/users/Test123
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+
+22:11:10.581 response time in milliseconds: 650.09
+1 &lt; 404
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: MISS
+1 &lt; CF-RAY: 73f100adbba16dc5-MIA
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 2
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 23 Aug 2022 04:11:10 GMT
+1 &lt; Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nlapI9iYTMn1oUrcDfwwHr8h%2BDBHfuV621t%2FBwG5YJaY%2F2HVjweaaJIJXekhdZyIbIXHv4D4Hwfw72Zenf9r6KCd0TZ9Lgun3C2RnM%2BY%2BK7q3EOf3pMMt3ll2Q%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{}</div>
+<div class="step-row">
+<div class="step-container" id="37">
+<div class="step-ref passed">37</div>
+<div class="step-cell passed">Then status 404</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

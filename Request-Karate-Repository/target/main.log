@@ -1,0 +1,192 @@
+22:11:06.747 request:
+1 > GET https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+
+22:11:07.245 response time in milliseconds: 488.70
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 1896
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 73f1009a4e038db5-MIA
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 23 Aug 2022 04:11:07 GMT
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=oHJTaPHrnRw9YUXW9nb18bpOBmfoYbFh0nhqxMJRPK69dps0%2B7ztPMiP5IB0w6v8koBpx9tu4Nzou46mG4i6SK7xAfE%2B75rhv5%2FXLSi5Ys%2FC%2FS%2FUCZr1o2habQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+22:11:07.290 request:
+1 > GET https://reqres.in/api/users/1996
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+
+22:11:07.802 response time in milliseconds: 511.58
+1 < 404
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: EXPIRED
+1 < CF-RAY: 73f1009c58a709fe-MIA
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 23 Aug 2022 04:11:07 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=cFjCiusUD9XSTROjeSvo4CzhMoxnhkxIpCRhkrUkY21dC9%2FsylGkY2OSbCW%2BnN5N5QUKRT%2Fu4QXKYfVYNewhY%2Bp6RQXV1pZCPGK5iOyxP6Wi%2FMl8if6A6GkDpg%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{}
+
+22:11:07.811 request:
+1 > GET https://reqres.in/api/users/@%23*/.&
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+
+22:11:08.274 response time in milliseconds: 461.25
+1 < 404
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: EXPIRED
+1 < CF-RAY: 73f1009f4da021f9-MIA
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 23 Aug 2022 04:11:08 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=fW7vLjy1rL7j%2FFH99KjdZ4r0Aq6BYgRbbdL73jKSFcZtqeZDqdkS5HPNoRVQrTVpOrqKXvnnC3DOabZVDpdgQRFOM6TZAdSEJInPRp5lRoVfnidvk5raL5s%2FAQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{}
+
+22:11:08.294 request:
+1 > GET https://reqres.in/api/users/Miguel
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+
+22:11:08.813 response time in milliseconds: 518.30
+1 < 404
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: EXPIRED
+1 < CF-RAY: 73f100a2bbd68dfa-MIA
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 23 Aug 2022 04:11:08 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Ho%2BaJ34jpNmUprsUptwc1mBSKMeuj3XNZEOBUM7kG5juTgSvmxd4Mf2Jjz7qAb54osNJ41a3LWv9puASvPkAs1AmtDMcMYU%2Fcm0yVL5Pdy1ca5Z6BXoVrRgY2A%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{}
+
+22:11:08.825 request:
+1 > GET https://reqres.in/api/users/12345
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+
+22:11:09.402 response time in milliseconds: 576.72
+1 < 404
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: EXPIRED
+1 < CF-RAY: 73f100a65b902263-MIA
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 23 Aug 2022 04:11:09 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=GaAQxYfLXsU5dG86GSSGHqwtgksIpJjx%2FKrJd5lwlCaFufIU8LE%2BaQytnR1CxeoxKbPyKGyD9RDw%2BS%2B%2BxRlFJcdnMfxSMnliuinEtUFxo8f5vFqRfsfVkqah3Q%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{}
+
+22:11:09.416 request:
+1 > GET https://reqres.in/api/users/@%23%23$
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+
+22:11:09.911 response time in milliseconds: 494.86
+1 < 404
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: MISS
+1 < CF-RAY: 73f100a989428d94-MIA
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 23 Aug 2022 04:11:09 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=oN92V9VzDO%2BdtrzjUWucoDb%2FS1MQqqaiLZOAkmAeT5dJMsxZQSbrwI%2BuGzhXmTG3tSwOtQRGD%2FkZ9igjMqAox%2Fv7%2BNBj4%2BODAQ4Ss8GlAZVxei0TCN4LAY%2BMiA%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{}
+
+22:11:09.931 request:
+1 > GET https://reqres.in/api/users/Test123
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+
+22:11:10.581 response time in milliseconds: 650.09
+1 < 404
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: MISS
+1 < CF-RAY: 73f100adbba16dc5-MIA
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 23 Aug 2022 04:11:10 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nlapI9iYTMn1oUrcDfwwHr8h%2BDBHfuV621t%2FBwG5YJaY%2F2HVjweaaJIJXekhdZyIbIXHv4D4Hwfw72Zenf9r6KCd0TZ9Lgun3C2RnM%2BY%2BK7q3EOf3pMMt3ll2Q%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{}
+
+{}
+
